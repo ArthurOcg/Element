@@ -1,0 +1,6 @@
+<h1>Vote aqui!</h1>
+<i *ngFor="let v of votos"
+  class="fa"
+  [class.fa-star]="v<=voto" [class.fa-star-o]="v>voto"
+  (click)="setVoto(v)"></i>
+
